@@ -1,1 +1,219 @@
-/* Add your CSS code here  */
+/* ================================== */
+/* Styles for 01-books.html */
+/* ================================== */
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+}
+
+#books-page {
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#books-page main {
+  margin: 3rem;
+}
+
+#books-page nav {
+  background-color: var(--dark-slate-infinity);
+  padding: 1rem 0;
+}
+
+#books-page nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#books-page nav li {
+  font-family: "Cinzel", serif;
+  padding: 0 1rem;
+}
+
+#books-page a {
+  color: var(--ice-blue-juvie);
+  text-decoration: none;
+  padding: 4px;
+}
+
+#books-page a:hover {
+  color: var(--dark-slate-infinity);
+  background-color: var(--ice-blue-juvie);
+  border-radius: 4px;
+}
+
+#books-page h1 {
+  text-align: center;
+  color: var(--gothic-gray-blue);
+}
+
+#books-page .heading {
+  font-family: "Cinzel", serif;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+#books-page #books li {
+  margin-top: 1rem;
+}
+
+#books-page ul {
+  padding-left: 1.5rem;
+}
+
+#books-page .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+#books-page .container img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+#books-page .container img:hover {
+  transform: scale(1.1);
+}
+
+#books-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+#books-page th,
+td {
+  border: 1px solid lightgray;
+  padding: 1rem;
+  text-align: center;
+}
+
+#books-page thead {
+  background-color: #fafafa;
+}
+
+#books-page tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+#books-page tfoot {
+  background-color: #fafafa;
+}
+/* ================================== */
+/* Styles for 02-form.html */
+/* ================================== */
+#form-page {
+  margin: 0;
+  padding: 0;
+  background-color: #161678;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#form-page main {
+  background-color: white;
+  border-radius: 8px;
+  width: 505px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+#form-page fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#form-page h1 {
+  color: #161678;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+#form-page br {
+  display: none;
+}
+
+#form-page form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-page form > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+}
+
+#form-page form > div:not(:last-of-type) {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 16px; */
+}
+
+#form-page form > div:not(:last-of-type) label {
+  flex: 0 0 220px;
+  color: #000;
+}
+
+input[type="text"],
+input[type="number"] {
+  flex: 1;
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#form-page legend {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#yes {
+  margin-left: 3rem;
+  margin-right: 5px;
+}
+
+#no {
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: calc(50% - 8px);
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+input[type="submit"] {
+  background-color: #161678;
+  color: white;
+}
+
+#form-page main > p {
+  font-size: 14px;
+}
